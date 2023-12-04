@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100vw;
+}
+
+.add-to-do-container, .show-to-do-container {
+    border: 2px solid black;
+    width: 50%;
+}
+
+.add-to-do-container {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+.show-to-do-container {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.show-to-do-container ul {
+    padding: 1rem;
+    list-style: none;
+}
+
+.to-do-element {
+    border: 2px solid black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.to-do-element p {
+    display: flex;
+    align-items: center;
+}
+
+.remove-btn {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 0;
+    border-radius: 0.5rem;
+    color: white;
+}
