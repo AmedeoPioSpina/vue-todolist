@@ -47,6 +47,12 @@ main section{
 .to-do-element p {
     display: flex;
     align-items: center;
+    flex-basis: 90%;
+}
+
+.to-do-element p s, .to-do-element p span {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .remove-btn {

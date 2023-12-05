@@ -13,8 +13,8 @@
         <main>
             <section>
                 <div class="add-to-do-container">
-                    <input type="text" placeholder="What to do?">
-                    <button class="add-btn">
+                    <input placeholder="What to do?" v-model="inputValue">
+                    <button class="add-btn" @click="addElementFunc()">
                         Add
                     </button>
                 </div>
@@ -22,7 +22,12 @@
                     <ul>
                         <li class="to-do-element" v-for="item in toDoList">
                             <p>
-                                {{item.text}}
+                                <s v-if="item.done === true">
+                                    {{item.text}}
+                                </s>
+                                <span v-else>
+                                    {{item.text}}
+                                </span>
                             </p>
                             <button class="remove-btn" @click="removeElementFunc($event)">
                                 <i class="fa-solid fa-xmark"></i>
